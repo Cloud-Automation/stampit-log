@@ -1,0 +1,26 @@
+{
+  "name": "stampit-log",
+  "version": "0.1.0",
+  "description": "A simple logger for stampit.",
+  "main": "stampit-log.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloud-automation/stampit-log.git"
+  },
+  "keywords": [
+    "stampit",
+    "log"
+  ],
+  "author": "Stefan Pöter <stefan.poeter@cloud-automation.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloud-automation/stampit-log/issues"
+  },
+  "homepage": "https://github.com/cloud-automation/stampit-log#readme",
+  "dependencies": {
+    "stampit": "^2.1.1"
+  }
+}
