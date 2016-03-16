@@ -14,15 +14,28 @@ A simple logging mechanism for stampit objects.
     var example = stampit()
         .refs({
             'logLabel' : 'Example',
+            'logLevel' : 'info',
             'logEnabled' : true    
         })
         .compose(log)
         .init(function () {
         
-            this.logInfo('This is a information.', 1, 'abc');
-            this.logError('This is a error log.', { 'key' : 'value' });             
-            
+
+            this.log.error('This is a error log.', { 'key' : 'value' });             
+            this.log.warn('This is a warning.');
+            this.log.info('This is a information.', 1, 'abc');
+            this.log.debug('This is a debug message.');
+            this.log.trace('This is a trace with a stack trace attached.');
+           
         });
+
+## Log Level
+
+Log level are ordered like this
+
+error, warn, info, debug, trace
+
+For example set the log level to debug and error, warn, info and debug messages are shown. Set the log level to error than only the error messages are shown.
 
 ## Licence
 
