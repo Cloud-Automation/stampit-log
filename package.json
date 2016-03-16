@@ -1,6 +1,6 @@
 {
   "name": "stampit-log",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple logger for stampit.",
   "main": "stampit-log.js",
   "scripts": {

@@ -9,9 +9,16 @@ var stamp = stampit()
     .compose(log)
     .init(function () {
     
-        this.logInfo('Logging information', { 'key' : 'someValue' });
-        this.logError('Logging an error', 123);
+        this.log.error('Logging an error', 123);
+        this.log.warn('This is a warning.');
+        this.log.info('Logging information', { 'key' : 'someValue' });
+        this.log.debug('This is a debug message.');
+        this.log.trace('This is a trace.');
     
     });
 
-stamp();
+stamp({ logLevel : 'error' });
+stamp({ logLevel : 'warn' });
+stamp({ logLevel : 'info' });
+stamp({ logLevel : 'debug' });
+stamp({ logLevel : 'trace' });
