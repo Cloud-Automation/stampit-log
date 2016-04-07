@@ -4,7 +4,8 @@ var stampit = require('stampit'),
 var stamp = stampit()
     .refs({
         'logLabel' : 'TEST',
-        'logEnabled' : true
+        'logEnabled' : true,
+        'logTimestamp' : true
     })
     .compose(log)
     .init(function () {

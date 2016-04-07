@@ -61,7 +61,6 @@ module.exports = stampit()
                     return;
                 }
 
-
                 var args = Array.prototype.slice.call(arguments);
 
                 if (this.logLabel) {
@@ -69,6 +68,11 @@ module.exports = stampit()
                 }
 
                 args.splice(0, 0, level.toUpperCase() + ' :');
+
+                if (this.logTimestamp) {
+                    args.splice(0, 0, new Date());
+                }
+
 
                 var stack;
 
